@@ -89,7 +89,7 @@ Error generating stack: `+o.message+`
     padding: 0 100px;
   }
 `,B0=Qn.div`
-  background-image: url(${{}.PUBLIC_URL}/bg-${e=>e.randomNumber}.webp);
+  background-image: url('${{}.PUBLIC_URL}/assets/bg-${e=>e.randomNumber}.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
