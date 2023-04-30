@@ -1,0 +1,50 @@
+import { useState, useEffect, useRef } from "react";
+import Container from "./components/constants/container";
+// import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
+import { BackgroundImageRandom } from "./components/BackgroundImage/BackgroundImage.styled";
+import {
+  PlayWrapper,
+  // PlayPicture,
+  PlayIcon,
+  PauseIcon,
+} from "./components/PlayWrapper/PlayWrapper.styled";
+
+function App() {
+  const [count, setCount] = useState(0);
+  const [play, setPlay] = useState(false);
+  const audioRef = useRef(null);
+
+  console.log(audioRef);
+
+  function onPlay() {
+    if (play === false) {
+      setPlay(true);
+      audioRef.current.play();
+    } else {
+      setPlay(false);
+      audioRef.current.pause();
+    }
+  }
+
+  useEffect(() => {
+    const random = Math.floor(Math.random() * 3);
+
+    setCount(random);
+  }, []);
+
+  return (
+    <>
+      <BackgroundImageRandom randomNumber={count}>
+        <Container>
+          <PlayWrapper onClick={onPlay}>
+            {play === true && <PauseIcon />}
+            {play === false && <PlayIcon />}
+            <audio ref={audioRef} src="https://radio.ukr.radio/ur2-mp3"></audio>
+          </PlayWrapper>
+        </Container>
+      </BackgroundImageRandom>
+    </>
+  );
+}
+
+export default App;
