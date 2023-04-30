@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // prettier-ignore
 export const BackgroundImageRandom = styled.div`
-  background-image: url('../../assets/bg-${props => props.randomNumber}.jpg');
+  background-image: url('/bg-${props => props.randomNumber}.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
