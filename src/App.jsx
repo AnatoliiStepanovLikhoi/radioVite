@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
-import Container from "./components/constants/container";
+import { useState, useEffect, useRef } from 'react';
+import Container from './components/constants/container';
 // import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
-import { BackgroundImageRandom } from "./components/BackgroundImage/BackgroundImage.styled";
+import { BackgroundImageRandom } from './components/BackgroundImage/BackgroundImage.styled';
 import {
   PlayWrapper,
   // PlayPicture,
   PlayIcon,
   PauseIcon,
-} from "./components/PlayWrapper/PlayWrapper.styled";
+} from './components/PlayWrapper/PlayWrapper.styled';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +27,7 @@ function App() {
   }
 
   useEffect(() => {
-    const random = Math.floor(Math.random() * 3);
+    const random = Math.floor(Math.random() * 3) + 1;
 
     setCount(random);
   }, []);
