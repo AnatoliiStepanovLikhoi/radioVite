@@ -62,7 +62,7 @@ Error generating stack: `+o.message+`
     padding: 0 100px;
   }
 `,vh=Wn.div`
-  background-image: url('../../src/assets/bg-${e=>e.randomNumber}.jpg');
+  background-image: url('../../assets/bg-${e=>e.randomNumber}.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
