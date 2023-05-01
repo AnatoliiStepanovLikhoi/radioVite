@@ -10,7 +10,7 @@ export const PlayWrapper = styled.div`
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-  margin-top: 50%;
+  /* margin-top: 50%;пше  */
 
   @media ${device.tablet} {
     height: 400px;
