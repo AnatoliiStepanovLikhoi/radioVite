@@ -13,7 +13,7 @@ export const VolumeSlider = ({ defaultValue, audioRef }) => {
 
   // console.log(defaultValue, audioRef);
 
-  const [volume, setVolume] = useState(50);
+  const [volume, setVolume] = useState(1);
 
   console.log(volume);
 
@@ -29,11 +29,11 @@ export const VolumeSlider = ({ defaultValue, audioRef }) => {
       <Slider.Root
         className="SliderRoot"
         defaultValue={defaultValue}
-        // value={[volume]}
+        value={[volume]}
         max={100}
         step={1}
         aria-label="Volume"
-        onValueChange={value => setVolume(value)}
+        onValueChange={setVolume}
       >
         <Slider.Track className="SliderTrack">
           <Slider.Range className="SliderRange" />

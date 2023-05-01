@@ -6,8 +6,14 @@ export const BackgroundImageRandom = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /* min-height: 600px; */
+  min-height: 100%;
 
-  display: flex;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
+
+  /* display: flex;
   flex-direction: column;
+  justify-content: center; */
 `;

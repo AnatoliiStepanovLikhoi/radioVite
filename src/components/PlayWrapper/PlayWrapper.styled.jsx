@@ -1,21 +1,23 @@
 import styled from 'styled-components';
 import { GiOldMicrophone, GiPauseButton } from 'react-icons/gi';
+import { device } from '../constants/deviceType';
 
 export const PlayWrapper = styled.div`
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   /* width: 300px; */
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-  margin-top: 40vh;
+  margin-top: 50%;
 
-  /* max-width: 200px; */
+  @media ${device.tablet} {
+    height: 400px;
+  }
+  @media ${device.desktop} {
+    height: 500px;
+  }
 `;
 
 export const PlayPicture = styled.picture`
@@ -27,9 +29,18 @@ export const PlayIcon = styled(GiOldMicrophone)`
   height: 200px;
   fill: white;
 
-  &:hover {
-    fill: tomato;
+  @media ${device.tablet} {
+    width: 300px;
+    height: 300px;
   }
+  @media ${device.desktop} {
+    width: 400px;
+    height: 400px;
+  }
+
+  /* &:hover {
+    fill: tomato;
+  } */
 `;
 
 export const PauseIcon = styled(GiPauseButton)`
@@ -37,7 +48,16 @@ export const PauseIcon = styled(GiPauseButton)`
   height: 170px;
   fill: white;
 
-  &:hover {
-    fill: tomato;
+  @media ${device.tablet} {
+    width: 270px;
+    height: 270px;
   }
+  @media ${device.desktop} {
+    width: 370px;
+    height: 370px;
+  }
+
+  /* &:hover {
+    fill: tomato;
+  } */
 `;

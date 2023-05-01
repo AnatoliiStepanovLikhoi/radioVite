@@ -1,13 +1,14 @@
-@import "../node_modules/modern-normalize/modern-normalize.css";
+@import '../node_modules/modern-normalize/modern-normalize.css';
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  position: relative;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* position: relative; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../constants/deviceType';
 import { ImVolumeIncrease, ImVolumeDecrease } from 'react-icons/im';
 
 export const VolumeWrapper = styled.div`
@@ -13,6 +13,11 @@ export const VolumeIconUP = styled(ImVolumeIncrease)`
   width: 36px;
   height: 36px;
   /* padding: 4px 16px; */
+
+  @media ${device.tablet} {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 export const VolumeIconDown = styled(ImVolumeDecrease)`
@@ -20,4 +25,9 @@ export const VolumeIconDown = styled(ImVolumeDecrease)`
   width: 36px;
   height: 36px;
   /* padding: 0px 16px; */
+
+  @media ${device.tablet} {
+    width: 48px;
+    height: 48px;
+  }
 `;
