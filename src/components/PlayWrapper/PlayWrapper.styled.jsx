@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { GiOldMicrophone, GiPauseButton } from "react-icons/gi";
+import styled from 'styled-components';
+import { GiOldMicrophone, GiPauseButton } from 'react-icons/gi';
 
 export const PlayWrapper = styled.div`
   /* position: absolute; */
@@ -9,6 +9,9 @@ export const PlayWrapper = styled.div`
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
+  /* width: 300px; */
+  height: 300px;
+  margin-bottom: 50px;
   cursor: pointer;
   margin-top: 40vh;
 
@@ -23,10 +26,18 @@ export const PlayIcon = styled(GiOldMicrophone)`
   width: 200px;
   height: 200px;
   fill: white;
+
+  &:hover {
+    fill: tomato;
+  }
 `;
 
 export const PauseIcon = styled(GiPauseButton)`
   width: 170px;
   height: 170px;
   fill: white;
+
+  &:hover {
+    fill: tomato;
+  }
 `;
