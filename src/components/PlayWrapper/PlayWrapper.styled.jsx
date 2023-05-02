@@ -7,16 +7,17 @@ export const PlayWrapper = styled.div`
   align-items: center;
   justify-content: center;
   /* width: 300px; */
-  height: 300px;
-  margin-bottom: 50px;
+  /* height: 200px; */
+  margin-top: 200px;
   cursor: pointer;
   /* margin-top: 50%;пше  */
 
   @media ${device.tablet} {
-    height: 400px;
+    margin-top: 150px;
+    height: 300px;
   }
   @media ${device.desktop} {
-    height: 500px;
+    height: 400px;
   }
 `;
 

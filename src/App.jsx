@@ -1,8 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Container from './components/constants/container';
 // import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
-import { BackgroundImageRandom } from './components/BackgroundImage/BackgroundImage.styled';
+import {
+  BackgroundImageRandom,
+  BlurBackground,
+} from './components/BackgroundImage/BackgroundImage.styled';
 import { VolumeSlider } from './components/VolumeSlider/VolumeSlider';
+import { Navbar } from './components/Navbar/Navbar';
 import {
   PlayWrapper,
   // PlayPicture,
@@ -29,7 +33,7 @@ function App() {
   }
 
   useEffect(() => {
-    const random = Math.floor(Math.random() * 3) + 1;
+    const random = Math.floor(Math.random() * 2) + 1;
 
     console.log(random);
 
@@ -39,14 +43,26 @@ function App() {
   return (
     <>
       <BackgroundImageRandom randomNumber={count}>
-        <Container>
-          <PlayWrapper onClick={onPlay}>
-            {play === true && <PauseIcon />}
-            {play === false && <PlayIcon />}
-            <audio ref={audioRef} src="https://radio.ukr.radio/ur2-mp3"></audio>
-          </PlayWrapper>
-          <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
-        </Container>
+        <BlurBackground>
+          <Container>
+            <Navbar />
+            <div>
+              <PlayWrapper onClick={onPlay}>
+                {play === true && <PauseIcon />}
+                {play === false && <PlayIcon />}
+                <audio
+                  ref={audioRef}
+                  src="https://radio.ukr.radio/ur2-mp3"
+                ></audio>
+              </PlayWrapper>
+              <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
+            </div>
+
+            <footer style={{ marginTop: 'auto', textAlign: 'center' }}>
+              <p>©2023 КП «ТелеРадіоСтудія «Бориспіль»»</p>
+            </footer>
+          </Container>
+        </BlurBackground>
       </BackgroundImageRandom>
     </>
   );
