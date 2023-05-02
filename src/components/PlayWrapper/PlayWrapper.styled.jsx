@@ -6,6 +6,7 @@ export const PlayWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   /* width: 300px; */
   /* height: 200px; */
   margin-top: 200px;
@@ -29,6 +30,7 @@ export const PlayIcon = styled(GiOldMicrophone)`
   width: 200px;
   height: 200px;
   fill: white;
+  z-index: 5;
 
   @media ${device.tablet} {
     width: 300px;
@@ -48,6 +50,7 @@ export const PauseIcon = styled(GiPauseButton)`
   width: 170px;
   height: 170px;
   fill: white;
+  z-index: 5;
 
   @media ${device.tablet} {
     width: 270px;

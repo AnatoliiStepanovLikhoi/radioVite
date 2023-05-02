@@ -23,6 +23,7 @@ function App() {
   console.log(audioRef);
 
   function onPlay() {
+    console.log('play');
     if (play === false) {
       setPlay(true);
       audioRef.current.play();

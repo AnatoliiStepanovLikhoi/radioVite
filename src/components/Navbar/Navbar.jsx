@@ -9,15 +9,15 @@ import {
 } from './Navbar.styled';
 
 export const Navbar = () => {
-  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
-  const [menuIsHidden, setMenuIsHidden] = useState(true);
+  // const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+  // const [menuIsHidden, setMenuIsHidden] = useState(true);
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
   const toggleMenu = () => {
-    if (!menuIsClicked) {
-      setBurgerIsOpen(!burgerIsOpen);
-      setMenuIsHidden(!menuIsHidden);
-    }
+    // if (!menuIsClicked) {
+    //   setBurgerIsOpen(!burgerIsOpen);
+    //   setMenuIsHidden(!menuIsHidden);
+    // }
 
     setMenuIsClicked(!menuIsClicked);
   };
