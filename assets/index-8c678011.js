@@ -78,9 +78,15 @@ Error generating stack: `+l.message+`
   height: 100vh;
   margin: 0 auto;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
   @media ${dt.mobile} {
     width: ${jn.mobile};
@@ -208,15 +214,15 @@ Error generating stack: `+l.message+`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 5;
   /* width: 300px; */
   /* height: 200px; */
-  margin-top: 200px;
+  /* margin-top: 150px; */
   cursor: pointer;
   /* margin-top: 50%;пше  */
 
   @media ${dt.tablet} {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     height: 300px;
   }
   @media ${dt.desktop} {
@@ -260,4 +266,4 @@ Error generating stack: `+l.message+`
   /* &:hover {
     fill: tomato;
   } */
-`;function $1(){const[e,t]=x.useState(1),[n,r]=x.useState(!1),o=x.useRef(null);console.log(o);function l(){console.log("play"),n===!1?(r(!0),o.current.play()):(r(!1),o.current.pause())}return x.useEffect(()=>{const i=Math.floor(Math.random()*2)+1;console.log(i),t(i)},[]),Y.jsx(Y.Fragment,{children:Y.jsx(vm,{randomNumber:e,children:Y.jsx(gm,{children:Y.jsxs(mm,{children:[Y.jsx(w1,{}),Y.jsxs("div",{children:[Y.jsxs(x1,{onClick:l,children:[n===!0&&Y.jsx(E1,{}),n===!1&&Y.jsx(C1,{}),Y.jsx("audio",{ref:o,src:"https://radio.ukr.radio/ur2-mp3"})]}),Y.jsx(Ld,{defaultValue:[50],audioRef:o})]}),Y.jsx("footer",{style:{marginTop:"auto",textAlign:"center"},children:Y.jsx("p",{children:"©2023 КП «ТелеРадіоСтудія «Бориспіль»»"})})]})})})})}ii.createRoot(document.getElementById("root")).render(Y.jsx(se.StrictMode,{children:Y.jsx(m0,{basename:"/radioVite",children:Y.jsx($1,{})})}));
+`;function $1(){const[e,t]=x.useState(1),[n,r]=x.useState(!1),o=x.useRef(null);console.log(o);function l(){console.log("play"),n===!1?(r(!0),o.current.play()):(r(!1),o.current.pause())}return x.useEffect(()=>{const i=Math.floor(Math.random()*2)+1;console.log(i),t(i)},[]),Y.jsx(Y.Fragment,{children:Y.jsx(vm,{randomNumber:e,children:Y.jsx(gm,{children:Y.jsxs(mm,{children:[Y.jsx(w1,{}),Y.jsxs("div",{style:{gridArea:"2 / 1 / 3 / 2",display:"flex",flexDirection:"column",justifyContent:"center"},children:[Y.jsxs(x1,{onClick:l,children:[n===!0&&Y.jsx(E1,{}),n===!1&&Y.jsx(C1,{}),Y.jsx("audio",{ref:o,src:"https://radio.ukr.radio/ur2-mp3"})]}),Y.jsx(Ld,{defaultValue:[50],audioRef:o})]}),Y.jsx("footer",{style:{marginTop:"auto",textAlign:"center",color:"tomato",gridArea:"3 / 1 / 4 / 2"},children:Y.jsx("p",{children:"©2023 КП «ТелеРадіоСтудія «Бориспіль»»"})})]})})})})}ii.createRoot(document.getElementById("root")).render(Y.jsx(se.StrictMode,{children:Y.jsx(m0,{basename:"/radioVite",children:Y.jsx($1,{})})}));
