@@ -6,15 +6,16 @@
 // import HeroImage from "./Hero/HeroImage";
 // import MainCategories from "./MainCategories/MainCategories";
 // import OtherCategoriesBtn from "./OtherCategories/OtherCategoriesBtn";
-import { children } from "react";
-import { BackgroundImageRandom } from "./BackgroundImage.styled";
 
-const BackgroundImage = () => {
-  return (
-    <>
-      <BackgroundImageRandom>{children}</BackgroundImageRandom>
-    </>
-  );
-};
+// import { children } from "react";
+// import { BackgroundImageRandom } from "./BackgroundImage.styled";
 
-export default BackgroundImage;
+// const BackgroundImage = () => {
+//   return (
+//     <>
+//       <BackgroundImageRandom>{children}</BackgroundImageRandom>
+//     </>
+//   );
+// };
+
+// export default BackgroundImage;

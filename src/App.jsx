@@ -1,21 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
 import Container from './components/constants/container';
-// import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
+
 import {
   BackgroundImageRandom,
   BlurBackground,
 } from './components/BackgroundImage/BackgroundImage.styled';
-import { VolumeSlider } from './components/VolumeSlider/VolumeSlider';
+import { Main } from './components/Main/Main';
 import { Navbar } from './components/Navbar/Navbar';
-import {
-  PlayWrapper,
-  // PlayPicture,
-  PlayIcon,
-  PauseIcon,
-} from './components/PlayWrapper/PlayWrapper.styled';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(50);
   const [play, setPlay] = useState(false);
 
   const audioRef = useRef(null);
@@ -47,35 +42,8 @@ function App() {
         <BlurBackground>
           <Container>
             <Navbar />
-            <div
-              style={{
-                gridArea: '2 / 1 / 3 / 2',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-              }}
-            >
-              <PlayWrapper onClick={onPlay}>
-                {play === true && <PauseIcon />}
-                {play === false && <PlayIcon />}
-                <audio
-                  ref={audioRef}
-                  src="https://radio.ukr.radio/ur2-mp3"
-                ></audio>
-              </PlayWrapper>
-              <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
-            </div>
-
-            <footer
-              style={{
-                marginTop: 'auto',
-                textAlign: 'center',
-                color: 'tomato',
-                gridArea: '3 / 1 / 4 / 2',
-              }}
-            >
-              <p>©2023 КП «ТелеРадіоСтудія «Бориспіль»»</p>
-            </footer>
+            <Main onPlay={onPlay} playState={play} audioRef={audioRef} />
+            <Footer />
           </Container>
         </BlurBackground>
       </BackgroundImageRandom>
