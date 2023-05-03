@@ -13,11 +13,8 @@ export const BackgroundImageRandom = styled.div`
 
   /* min-height: 600px; */
 
-  min-height: 100%;
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
-  position: relative;
+  /* min-height: 100dvh; */
+  /* position: relative; */
 
   /* display: flex;
   flex-direction: column;
