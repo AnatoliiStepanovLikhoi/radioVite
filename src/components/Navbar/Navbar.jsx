@@ -32,7 +32,7 @@ export const Navbar = () => {
       <NavbarWrapper>
         {/* <LogoLink to="/" aria-label="logo button"> */}
         <LogoWrapper>
-          <LogoIcon src="./logoBoryspilFM.png" />
+          <LogoIcon src="./logoBoryspilFM.png" alt="Boryspil FM Logo" />
         </LogoWrapper>
         {/* </LogoLink> */}
         <BurgerMenu onClick={toggleMenu}>
