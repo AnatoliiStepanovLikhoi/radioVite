@@ -47,7 +47,14 @@ function App() {
         <BlurBackground>
           <Container>
             <Navbar />
-            <div>
+            <div
+              style={{
+                gridArea: '2 / 1 / 3 / 2',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
+            >
               <PlayWrapper onClick={onPlay}>
                 {play === true && <PauseIcon />}
                 {play === false && <PlayIcon />}
@@ -59,7 +66,14 @@ function App() {
               <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
             </div>
 
-            <footer style={{ marginTop: 'auto', textAlign: 'center' }}>
+            <footer
+              style={{
+                marginTop: 'auto',
+                textAlign: 'center',
+                color: 'tomato',
+                gridArea: '3 / 1 / 4 / 2',
+              }}
+            >
               <p>©2023 КП «ТелеРадіоСтудія «Бориспіль»»</p>
             </footer>
           </Container>

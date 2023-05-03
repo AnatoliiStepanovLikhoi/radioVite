@@ -6,15 +6,15 @@ export const PlayWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 5;
   /* width: 300px; */
   /* height: 200px; */
-  margin-top: 200px;
+  /* margin-top: 150px; */
   cursor: pointer;
   /* margin-top: 50%;пше  */
 
   @media ${device.tablet} {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     height: 300px;
   }
   @media ${device.desktop} {

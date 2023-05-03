@@ -5,9 +5,15 @@ const Container = styled.div`
   height: 100vh;
   margin: 0 auto;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
   @media ${device.mobile} {
     width: ${size.mobile};
