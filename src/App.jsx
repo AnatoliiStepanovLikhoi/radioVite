@@ -20,7 +20,7 @@ function App() {
 
   const audioRef = useRef(null);
 
-  console.log(audioRef);
+  // console.log(audioRef);
 
   function onPlay() {
     console.log('play');

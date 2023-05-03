@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { device } from '../constants/deviceType';
 
 export const NavbarContainer = styled.div`
   width: 100%;
@@ -11,11 +13,20 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   height: 5em;
   padding: 1em;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   /* backdrop-filter: 8px; */
 
   display: flex;
   justify-content: space-between;
+
+  @media ${device.tablet} {
+    height: 6em;
+    padding: 1.5em;
+  }
+  @media ${device.desktop} {
+    height: 9em;
+    padding: 3em;
+  }
 `;
 
 export const BurgerMenu = styled.div`
@@ -30,7 +41,7 @@ export const BurgerMenu = styled.div`
 `;
 
 export const BurgerBar = styled.div`
-  width: 4em;
+  width: 3em;
   height: 0.5em;
   background-color: tomato;
   border-radius: 0.5em;
@@ -38,6 +49,11 @@ export const BurgerBar = styled.div`
 
   transform: rotate(0), translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+
+  @media ${device.tablet} {
+    width: 4em;
+    height: 0.5em;
+  }
 
   &.rotate {
     transform: rotate(45deg) translate(0.75em, 1.25em);
@@ -70,18 +86,22 @@ export const BurgerBar = styled.div`
 //   transition: ease-out 0/5s;
 // `;
 
-export const SideMenu = styled.div`
-  width: 50%;
-  height: 100vh;
-  background: rgb(47, 47, 55);
-  background: linear-gradient(
-    90deg,
-    rgba(47, 47, 55, 1) 0%,
-    rgba(67, 67, 84, 1) 50%,
-    rgba(105, 114, 116, 1) 100%
-  );
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
+export const LogoLink = styled(NavLink)``;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+`;
+
+export const LogoIcon = styled.img`
+  width: 250px;
+
+  @media ${device.tablet} {
+    width: 300px;
+  }
+
+  @media ${device.desktop} {
+    width: 350px;
+  }
 `;

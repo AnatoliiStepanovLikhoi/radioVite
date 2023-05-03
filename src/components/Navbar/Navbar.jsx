@@ -2,11 +2,16 @@ import { useState } from 'react';
 import {
   NavbarContainer,
   BurgerMenu,
-  SideMenu,
+  // SideMenu,
   NavbarWrapper,
   BurgerBar,
+  LogoWrapper,
+  // LogoLink,
+  LogoIcon,
   //   BurgerBarFirst,
 } from './Navbar.styled';
+
+import { SideBar } from './SideMenu';
 
 export const Navbar = () => {
   // const [burgerIsOpen, setBurgerIsOpen] = useState(false);
@@ -25,7 +30,11 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarWrapper>
-        <div>Logo</div>
+        {/* <LogoLink to="/" aria-label="logo button"> */}
+        <LogoWrapper>
+          <LogoIcon src="./logoBoryspilFM.png" />
+        </LogoWrapper>
+        {/* </LogoLink> */}
         <BurgerMenu onClick={toggleMenu}>
           <BurgerBar className={menuIsClicked ? 'rotate' : ''} />
           <BurgerBar className={menuIsClicked ? 'scale' : ''} />
@@ -33,7 +42,7 @@ export const Navbar = () => {
         </BurgerMenu>
       </NavbarWrapper>
 
-      {menuIsClicked && <SideMenu />}
+      {menuIsClicked && <SideBar />}
     </NavbarContainer>
   );
 };
