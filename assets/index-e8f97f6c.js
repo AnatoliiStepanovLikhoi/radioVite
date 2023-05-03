@@ -208,7 +208,7 @@ Error generating stack: `+l.message+`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`,op=({onPlay:e,playState:t,audioRef:n})=>{const r=()=>{let o=(navigator==null?void 0:navigator.userAgent)||(navigator==null?void 0:navigator.platform)||"unknown";return/iPhone|iPod|iPad/.test(o)};return A.jsxs(iv,{children:[A.jsxs(rv,{onClick:e,children:[t===!0&&A.jsx(lv,{}),t===!1&&A.jsx(ov,{}),A.jsx("audio",{ref:n,src:"https://radio.ukr.radio/ur2-mp3"})]}),r&&A.jsx(rp,{defaultValue:[50],audioRef:n})]})};op.propTypes={onPlay:kt.func.isRequired,playState:kt.bool.isRequired,audioRef:kt.object.isRequired};const uv=ee.div`
+`,op=({onPlay:e,playState:t,audioRef:n})=>{const o=(()=>{let l=(navigator==null?void 0:navigator.userAgent)||(navigator==null?void 0:navigator.platform)||"unknown";return/iPhone|iPod|iPad/.test(l)})();return A.jsxs(iv,{children:[A.jsxs(rv,{onClick:e,children:[t===!0&&A.jsx(lv,{}),t===!1&&A.jsx(ov,{}),A.jsx("audio",{ref:n,src:"https://radio.ukr.radio/ur2-mp3"})]}),o&&A.jsx(rp,{defaultValue:[50],audioRef:n})]})};op.propTypes={onPlay:kt.func.isRequired,playState:kt.bool.isRequired,audioRef:kt.object.isRequired};const uv=ee.div`
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -285,7 +285,7 @@ Error generating stack: `+l.message+`
   }
 `,dv=ee.div`
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   background: rgb(47, 47, 55);
   background: linear-gradient(
     90deg,
@@ -381,4 +381,4 @@ Error generating stack: `+l.message+`
   /* fill: tomato; */
   width: 60px;
   height: 60px;
-`,kv=()=>(console.log(lc),console.log(oc),A.jsxs(wv,{children:[A.jsx(vi,{children:A.jsx(gi,{to:"https://www.instagram.com/boryspilfm/",rel:"noopener noreferrer","aria-label":"instagram",children:A.jsx(oc,{})})}),A.jsx(vi,{children:A.jsx(gi,{to:"https://youtube.com/@TRS_Boryspil",rel:"noopener noreferrer","aria-label":"youtube",children:A.jsx(lc,{})})}),A.jsx(vi,{children:A.jsx(gi,{to:"https://www.facebook.com/FMBoryspil/",rel:"noopener noreferrer","aria-label":"facebook",children:A.jsx(xv,{})})})]})),Cv=()=>A.jsxs(yv,{children:[A.jsx(kv,{}),A.jsx(Sv,{children:"©2023 КП «ТелеРадіоСтудія «Бориспіль»"})]});function Ev(){const[e,t]=S.useState(50),[n,r]=S.useState(!1),o=S.useRef(null);function l(){console.log("play"),n===!1?(r(!0),o.current.play()):(r(!1),o.current.pause())}return S.useEffect(()=>{const i=Math.floor(Math.random()*2)+1;console.log(i),t(i)},[]),A.jsx(A.Fragment,{children:A.jsx(nm,{randomNumber:e,children:A.jsx(rm,{children:A.jsxs(tm,{children:[A.jsx(hv,{}),A.jsx(op,{onPlay:l,playState:n,audioRef:o}),A.jsx(Cv,{})]})})})})}yi.createRoot(document.getElementById("root")).render(A.jsx(ce.StrictMode,{children:A.jsx(Jh,{basename:"/radioVite",children:A.jsx(Ev,{})})}));
+`,kv=()=>(console.log(lc),console.log(oc),A.jsxs(wv,{children:[A.jsx(vi,{children:A.jsx(gi,{to:"https://www.instagram.com/boryspilfm/",rel:"noopener noreferrer","aria-label":"instagram",children:A.jsx(oc,{})})}),A.jsx(vi,{children:A.jsx(gi,{to:"https://youtube.com/@TRS_Boryspil",rel:"noopener noreferrer","aria-label":"youtube",children:A.jsx(lc,{})})}),A.jsx(vi,{children:A.jsx(gi,{to:"https://www.facebook.com/FMBoryspil/",rel:"noopener noreferrer","aria-label":"facebook",children:A.jsx(xv,{})})})]})),Cv=()=>A.jsxs(yv,{children:[A.jsx(kv,{}),A.jsx(Sv,{children:"©2023 КП «ТелеРадіоСтудія «Бориспіль»"})]});function Ev(){const[e,t]=S.useState(1),[n,r]=S.useState(!1),o=S.useRef(null);function l(){console.log("play"),n===!1?(r(!0),o.current.play()):(r(!1),o.current.pause())}return S.useEffect(()=>{const i=Math.floor(Math.random()*2)+1;console.log(i),t(i)},[]),A.jsx(A.Fragment,{children:A.jsx(nm,{randomNumber:e,children:A.jsx(rm,{children:A.jsxs(tm,{children:[A.jsx(hv,{}),A.jsx(op,{onPlay:l,playState:n,audioRef:o}),A.jsx(Cv,{})]})})})})}yi.createRoot(document.getElementById("root")).render(A.jsx(ce.StrictMode,{children:A.jsx(Jh,{basename:"/radioVite",children:A.jsx(Ev,{})})}));
