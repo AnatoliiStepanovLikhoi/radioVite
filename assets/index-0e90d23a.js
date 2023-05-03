@@ -167,7 +167,7 @@ Error generating stack: `+l.message+`
 `;const ov=ee(tv)`
   width: 200px;
   height: 200px;
-  fill: white;
+  fill: #f0f0f0;
   z-index: 5;
 
   @media ${me.tablet} {
@@ -185,7 +185,7 @@ Error generating stack: `+l.message+`
 `,lv=ee(nv)`
   width: 170px;
   height: 170px;
-  fill: white;
+  fill: #f0f0f0;
   z-index: 5;
 
   @media ${me.tablet} {
@@ -212,6 +212,7 @@ Error generating stack: `+l.message+`
   height: 100vh;
   position: absolute;
   left: 0;
+  top: 15px;
 `,av=ee.nav`
   width: 100%;
   height: 5em;
