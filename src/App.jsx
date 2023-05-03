@@ -10,7 +10,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(50);
+  const [count, setCount] = useState(1);
   const [play, setPlay] = useState(false);
 
   const audioRef = useRef(null);

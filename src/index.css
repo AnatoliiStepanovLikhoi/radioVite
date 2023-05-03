@@ -5,6 +5,8 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   /* position: relative; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 code {

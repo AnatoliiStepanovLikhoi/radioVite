@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import { VolumeSlider } from '../VolumeSlider/VolumeSlider';
 import {
   PlayWrapper,
@@ -16,6 +17,8 @@ export const Main = ({ onPlay, playState, audioRef }) => {
     return /iPhone|iPod|iPad/.test(platform);
   };
 
+  const shouldRenderVolumeSlider = isIOS();
+
   //   console.log(audioRef);
 
   return (
@@ -25,7 +28,9 @@ export const Main = ({ onPlay, playState, audioRef }) => {
         {playState === false && <PlayIcon />}
         <audio ref={audioRef} src="https://radio.ukr.radio/ur2-mp3"></audio>
       </PlayWrapper>
-      {isIOS && <VolumeSlider defaultValue={[50]} audioRef={audioRef} />}
+      {shouldRenderVolumeSlider && (
+        <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
+      )}
     </MainComponent>
   );
 };
