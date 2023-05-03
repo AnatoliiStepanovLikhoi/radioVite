@@ -212,11 +212,11 @@ Error generating stack: `+l.message+`
   height: 100vh;
   position: absolute;
   left: 0;
-  top: 10px;
+  /* top: 10px; */
 `,av=ee.nav`
   width: 100%;
-  height: 5em;
-  padding: 1em;
+  height: 8em;
+  padding: 2.5em;
   /* border: 1px solid gray; */
   /* backdrop-filter: 8px; */
 
@@ -224,8 +224,8 @@ Error generating stack: `+l.message+`
   justify-content: space-between;
 
   @media ${me.tablet} {
-    height: 6em;
-    padding: 1.5em;
+    height: 7em;
+    padding: 2em;
   }
   @media ${me.desktop} {
     height: 9em;
