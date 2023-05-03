@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device, size } from './deviceType';
 
 const Container = styled.div`
-  min-height: 100dvh;
+  min-height: 100svh;
   margin: 0 auto;
 
   display: flex;

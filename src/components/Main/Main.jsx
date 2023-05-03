@@ -28,7 +28,7 @@ export const Main = ({ onPlay, playState, audioRef }) => {
         {playState === false && <PlayIcon />}
         <audio ref={audioRef} src="https://radio.ukr.radio/ur2-mp3"></audio>
       </PlayWrapper>
-      {shouldRenderVolumeSlider && (
+      {!shouldRenderVolumeSlider && (
         <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
       )}
     </MainComponent>
