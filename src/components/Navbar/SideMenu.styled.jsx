@@ -3,7 +3,7 @@ import { device } from '../constants/deviceType';
 
 export const SideMenu = styled.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background: rgb(47, 47, 55);
   background: linear-gradient(
     90deg,
