@@ -285,7 +285,7 @@ Error generating stack: `+l.message+`
   }
 `,dv=ee.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background: rgb(47, 47, 55);
   background: linear-gradient(
     90deg,
