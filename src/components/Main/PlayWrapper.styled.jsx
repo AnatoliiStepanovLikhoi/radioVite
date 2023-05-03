@@ -27,7 +27,7 @@ export const PlayPicture = styled.picture`
 export const PlayIcon = styled(GiOldMicrophone)`
   width: 200px;
   height: 200px;
-  fill: white;
+  fill: #f0f0f0;
   z-index: 5;
 
   @media ${device.tablet} {
@@ -47,7 +47,7 @@ export const PlayIcon = styled(GiOldMicrophone)`
 export const PauseIcon = styled(GiPauseButton)`
   width: 170px;
   height: 170px;
-  fill: white;
+  fill: #f0f0f0;
   z-index: 5;
 
   @media ${device.tablet} {

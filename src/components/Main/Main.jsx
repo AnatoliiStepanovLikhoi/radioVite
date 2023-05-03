@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { VolumeSlider } from '../VolumeSlider/VolumeSlider';
 import {
   PlayWrapper,
