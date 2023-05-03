@@ -7,13 +7,13 @@ export const NavbarContainer = styled.div`
   height: 100vh;
   position: absolute;
   left: 0;
-  top: 10px;
+  /* top: 10px; */
 `;
 
 export const NavbarWrapper = styled.nav`
   width: 100%;
-  height: 5em;
-  padding: 1em;
+  height: 8em;
+  padding: 2.5em;
   /* border: 1px solid gray; */
   /* backdrop-filter: 8px; */
 
@@ -21,8 +21,8 @@ export const NavbarWrapper = styled.nav`
   justify-content: space-between;
 
   @media ${device.tablet} {
-    height: 6em;
-    padding: 1.5em;
+    height: 7em;
+    padding: 2em;
   }
   @media ${device.desktop} {
     height: 9em;
