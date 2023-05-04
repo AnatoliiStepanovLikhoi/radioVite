@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { GiOldMicrophone, GiPauseButton } from 'react-icons/gi';
+// import { GiOldMicrophone, GiPauseButton } from 'react-icons/gi';
+import { BsPlayCircleFill } from 'react-icons/bs';
+import { FaPauseCircle } from 'react-icons/fa';
+
 import { device } from '../constants/deviceType';
 
 export const PlayWrapper = styled.div`
@@ -24,9 +27,9 @@ export const PlayPicture = styled.picture`
   width: 100%;
 `;
 
-export const PlayIcon = styled(GiOldMicrophone)`
-  width: 200px;
-  height: 200px;
+export const PlayIcon = styled(BsPlayCircleFill)`
+  width: 150px;
+  height: 150px;
   fill: #f0f0f0;
   z-index: 5;
 
@@ -44,7 +47,7 @@ export const PlayIcon = styled(GiOldMicrophone)`
   } */
 `;
 
-export const PauseIcon = styled(GiPauseButton)`
+export const PauseIcon = styled(FaPauseCircle)`
   width: 170px;
   height: 170px;
   fill: #f0f0f0;
