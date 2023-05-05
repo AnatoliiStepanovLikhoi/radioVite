@@ -8,6 +8,7 @@ import {
 import { Main } from './components/Main/Main';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
+import { Helmet } from 'react-helmet-async';
 
 function App() {
   const [count, setCount] = useState(1);
@@ -38,6 +39,14 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Boryspil FM 94.9</title>
+        <meta
+          name="опис"
+          content="Новини, музика, розважальні програми на хвилі Бориспіль FM"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <BackgroundImageRandom randomNumber={count}>
         <BlurBackground>
           <Container>
