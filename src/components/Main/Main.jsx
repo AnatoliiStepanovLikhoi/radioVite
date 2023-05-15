@@ -28,7 +28,7 @@ export const Main = ({ onPlay, playState, audioRef }) => {
         {playState === false && <PlayIcon />}
         <audio
           ref={audioRef}
-          src="https://91.219.253.226:8000/borispilfm"
+          src="http://91.219.253.226:8000/borispilfm"
         ></audio>
       </PlayWrapper>
       {!shouldRenderVolumeSlider && (
