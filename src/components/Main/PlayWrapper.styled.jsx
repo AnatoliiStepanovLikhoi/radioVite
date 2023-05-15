@@ -28,26 +28,6 @@ export const PlayPicture = styled.picture`
 `;
 
 export const PlayIcon = styled(BsPlayCircleFill)`
-  width: 150px;
-  height: 150px;
-  fill: #f0f0f0;
-  z-index: 5;
-
-  @media ${device.tablet} {
-    width: 300px;
-    height: 300px;
-  }
-  @media ${device.desktop} {
-    width: 400px;
-    height: 400px;
-  }
-
-  /* &:hover {
-    fill: tomato;
-  } */
-`;
-
-export const PauseIcon = styled(FaPauseCircle)`
   width: 170px;
   height: 170px;
   fill: #f0f0f0;
@@ -60,6 +40,26 @@ export const PauseIcon = styled(FaPauseCircle)`
   @media ${device.desktop} {
     width: 370px;
     height: 370px;
+  }
+
+  /* &:hover {
+    fill: tomato;
+  } */
+`;
+
+export const PauseIcon = styled(FaPauseCircle)`
+  width: 180px;
+  height: 180px;
+  fill: #f0f0f0;
+  z-index: 5;
+
+  @media ${device.tablet} {
+    width: 280px;
+    height: 280px;
+  }
+  @media ${device.desktop} {
+    width: 380px;
+    height: 380px;
   }
 
   /* &:hover {
