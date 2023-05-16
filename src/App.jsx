@@ -16,10 +16,7 @@ function App() {
 
   const audioRef = useRef(null);
 
-  // console.log(audioRef);
-
   function onPlay() {
-    console.log('play');
     if (play === false) {
       setPlay(true);
       audioRef.current.play();
@@ -31,8 +28,6 @@ function App() {
 
   useEffect(() => {
     const random = Math.floor(Math.random() * 2) + 1;
-
-    console.log(random);
 
     setCount(random);
   }, []);

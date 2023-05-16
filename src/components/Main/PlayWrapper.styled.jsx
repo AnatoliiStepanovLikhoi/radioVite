@@ -10,9 +10,7 @@ export const PlayWrapper = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 5;
-  /* width: 300px; */
   height: 200px;
-  /* margin-top: 150px; */
   cursor: pointer;
 
   @media ${device.tablet} {

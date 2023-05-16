@@ -8,9 +8,6 @@ import {
 } from './Footer.styled';
 
 export const SocialLinks = () => {
-  console.log(YoutubeIcon);
-  console.log(InstaIcon);
-
   return (
     <SocialList>
       <SocialItem>

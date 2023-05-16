@@ -5,7 +5,6 @@ import { device } from '../constants/deviceType';
 import { AiOutlineYoutube, AiOutlineFacebook } from 'react-icons/ai';
 
 export const FooterComponent = styled.footer`
-  /* margin-top: auto; */
   text-align: center;
   color: tomato;
   grid-area: 3 / 1 / 4 / 2;
@@ -47,19 +46,16 @@ export const LinkStyled = styled(Link)`
 `;
 
 export const InstaIcon = styled(BsInstagram)`
-  /* fill: tomato; */
   width: 50px;
   height: 50px;
 `;
 
 export const YoutubeIcon = styled(AiOutlineYoutube)`
-  /* fill: tomato; */
   width: 80px;
   height: 70px;
 `;
 
 export const FacebookIcon = styled(AiOutlineFacebook)`
-  /* fill: tomato; */
   width: 60px;
   height: 60px;
 `;

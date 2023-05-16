@@ -9,13 +9,7 @@ import {
 } from './VolumeSlider.styled';
 
 export const VolumeSlider = ({ defaultValue, audioRef }) => {
-  // const { defaultValue, audioRef } = props;
-
-  // console.log(defaultValue, audioRef);
-
   const [volume, setVolume] = useState(50);
-
-  // console.log(volume);
 
   useEffect(() => {
     if (audioRef) {

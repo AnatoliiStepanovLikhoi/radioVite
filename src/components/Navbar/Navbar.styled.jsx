@@ -72,21 +72,6 @@ export const BurgerBar = styled.div`
   }
 `;
 
-// export const BurgerBarFirst = styled.div`
-//   transform: rotate(45deg), translate(0.75em, 1.25em);
-//   transition: ease-out 0/5s;
-// `;
-
-// export const BurgerBarSecond = styled.div`
-//   transform: scale(0.1);
-//   transition: ease-out 0/5s;
-// `;
-
-// export const BurgerBarthird = styled.div`
-//   transform: rotate(135deg), translate(0.5em, 1em);
-//   transition: ease-out 0/5s;
-// `;
-
 export const LogoLink = styled(NavLink)``;
 
 export const LogoWrapper = styled.div`

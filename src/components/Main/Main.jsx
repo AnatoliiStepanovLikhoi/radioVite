@@ -1,12 +1,6 @@
 import PropTypes from 'prop-types';
-// import { useEffect } from 'react';
 import { VolumeSlider } from '../VolumeSlider/VolumeSlider';
-import {
-  PlayWrapper,
-  // PlayPicture,
-  PlayIcon,
-  PauseIcon,
-} from './PlayWrapper.styled';
+import { PlayWrapper, PlayIcon, PauseIcon } from './PlayWrapper.styled';
 
 import { MainComponent } from './Main.styled';
 
@@ -18,8 +12,6 @@ export const Main = ({ onPlay, playState, audioRef }) => {
   };
 
   const shouldRenderVolumeSlider = isIOS();
-
-  //   console.log(audioRef);
 
   return (
     <MainComponent>
