@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { GiOldMicrophone, GiPauseButton } from 'react-icons/gi';
 import { BsPlayCircleFill } from 'react-icons/bs';
 import { FaPauseCircle } from 'react-icons/fa';
 

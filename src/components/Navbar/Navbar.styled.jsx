@@ -38,7 +38,6 @@ export const BurgerMenu = styled.div`
   align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
-  /* background-color: black; */
 `;
 
 export const BurgerBar = styled.div`
