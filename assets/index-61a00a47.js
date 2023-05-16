@@ -175,9 +175,9 @@ Error generating stack: `+i.message+`
     height: 370px;
   }
 
-  /* &:hover {
-    fill: tomato;
-  } */
+  &:hover {
+    fill: #d9d9d9;
+  }
 `,jv=re(Iv)`
   width: 180px;
   height: 180px;
@@ -193,9 +193,9 @@ Error generating stack: `+i.message+`
     height: 380px;
   }
 
-  /* &:hover {
-    fill: tomato;
-  } */
+  &:hover {
+    fill: #d9d9d9;
+  }
 `,Dv=re.main`
   flex-grow: 1;
   display: flex;
