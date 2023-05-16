@@ -233,7 +233,6 @@ Error generating stack: `+i.message+`
   align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
-  /* background-color: black; */
 `,_l=re.div`
   width: 3em;
   height: 0.5em;
