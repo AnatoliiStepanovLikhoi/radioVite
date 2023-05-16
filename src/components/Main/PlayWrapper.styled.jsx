@@ -40,9 +40,9 @@ export const PlayIcon = styled(BsPlayCircleFill)`
     height: 370px;
   }
 
-  /* &:hover {
-    fill: tomato;
-  } */
+  &:hover {
+    fill: #d9d9d9;
+  }
 `;
 
 export const PauseIcon = styled(FaPauseCircle)`
@@ -60,7 +60,7 @@ export const PauseIcon = styled(FaPauseCircle)`
     height: 380px;
   }
 
-  /* &:hover {
-    fill: tomato;
-  } */
+  &:hover {
+    fill: #d9d9d9;
+  }
 `;
