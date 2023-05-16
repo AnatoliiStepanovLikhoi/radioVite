@@ -207,7 +207,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`,zp=({onPlay:e,playState:t,audioRef:n})=>{const o=(()=>{let i=(navigator==null?void 0:navigator.userAgent)||(navigator==null?void 0:navigator.platform)||"unknown";return/iPhone|iPod|iPad/.test(i)})();return I.jsxs(Uv,{children:[I.jsxs(jv,{onClick:e,children:[t===!0&&I.jsx(Fv,{}),t===!1&&I.jsx(Dv,{}),I.jsx("audio",{ref:n,src:"http://91.219.253.226:8000/borispilfm"})]}),!o&&I.jsx(Ap,{defaultValue:[50],audioRef:n})]})};zp.propTypes={onPlay:B.func.isRequired,playState:B.bool.isRequired,audioRef:B.object.isRequired};const Bv=re.div`
+`,zp=({onPlay:e,playState:t,audioRef:n})=>{const o=(()=>{let i=(navigator==null?void 0:navigator.userAgent)||(navigator==null?void 0:navigator.platform)||"unknown";return/iPhone|iPod|iPad/.test(i)})();return I.jsxs(Uv,{children:[I.jsxs(jv,{onClick:e,children:[t===!0&&I.jsx(Fv,{}),t===!1&&I.jsx(Dv,{}),I.jsx("audio",{ref:n,src:"https://radio.ukr.radio/ur2-mp3"})]}),!o&&I.jsx(Ap,{defaultValue:[50],audioRef:n})]})};zp.propTypes={onPlay:B.func.isRequired,playState:B.bool.isRequired,audioRef:B.object.isRequired};const Bv=re.div`
   width: 100%;
   height: 100vh;
   position: absolute;
