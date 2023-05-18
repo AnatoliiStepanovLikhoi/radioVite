@@ -12,8 +12,9 @@ export const NavbarContainer = styled.div`
 
 export const NavbarWrapper = styled.nav`
   width: 100%;
-  height: 8em;
-  padding: 2.5em;
+  height: 9em;
+  padding: 3em;
+  margin-top: 20px;
   /* border: 1px solid gray; */
   /* backdrop-filter: 8px; */
 
@@ -25,6 +26,7 @@ export const NavbarWrapper = styled.nav`
     padding: 2em;
   }
   @media ${device.desktop} {
+    margin-top: 10px;
     height: 9em;
     padding: 3em;
   }
