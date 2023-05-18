@@ -209,8 +209,9 @@ Error generating stack: `+i.message+`
   /* top: 10px; */
 `,Uv=re.nav`
   width: 100%;
-  height: 8em;
-  padding: 2.5em;
+  height: 9em;
+  padding: 3em;
+  margin-top: 20px;
   /* border: 1px solid gray; */
   /* backdrop-filter: 8px; */
 
@@ -222,6 +223,7 @@ Error generating stack: `+i.message+`
     padding: 2em;
   }
   @media ${ye.desktop} {
+    margin-top: 10px;
     height: 9em;
     padding: 3em;
   }
