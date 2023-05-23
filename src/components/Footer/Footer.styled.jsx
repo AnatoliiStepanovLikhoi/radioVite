@@ -37,6 +37,7 @@ export const FooterText = styled.p`
 
 export const LinkStyled = styled(Link)`
   color: tomato;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   &:hover,
   &:focus,

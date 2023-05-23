@@ -29,6 +29,7 @@ export const PlayIcon = styled(BsPlayCircleFill)`
   height: 170px;
   fill: #f0f0f0;
   z-index: 5;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   @media ${device.tablet} {
     width: 270px;
@@ -40,7 +41,10 @@ export const PlayIcon = styled(BsPlayCircleFill)`
   }
 
   &:hover {
-    fill: #d9d9d9;
+    fill: tomato;
+    /* border-radius: 50%;
+    border: none;
+    box-shadow: 16px 16px 77px #f5f5f5, -16px -16px 77px #ffffff; */
   }
 `;
 
@@ -49,6 +53,7 @@ export const PauseIcon = styled(FaPauseCircle)`
   height: 180px;
   fill: #f0f0f0;
   z-index: 5;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   @media ${device.tablet} {
     width: 280px;
