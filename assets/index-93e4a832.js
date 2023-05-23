@@ -165,6 +165,7 @@ Error generating stack: `+i.message+`
   height: 170px;
   fill: #f0f0f0;
   z-index: 5;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   @media ${ye.tablet} {
     width: 270px;
@@ -176,13 +177,17 @@ Error generating stack: `+i.message+`
   }
 
   &:hover {
-    fill: #d9d9d9;
+    fill: tomato;
+    /* border-radius: 50%;
+    border: none;
+    box-shadow: 16px 16px 77px #f5f5f5, -16px -16px 77px #ffffff; */
   }
 `,jv=re(Iv)`
   width: 180px;
   height: 180px;
   fill: #f0f0f0;
   z-index: 5;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   @media ${ye.tablet} {
     width: 280px;
@@ -357,6 +362,7 @@ Error generating stack: `+i.message+`
   }
 `,Al=re(tp)`
   color: tomato;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   &:hover,
   &:focus,
