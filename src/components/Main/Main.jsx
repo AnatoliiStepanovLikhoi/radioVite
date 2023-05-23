@@ -26,10 +26,10 @@ export const Main = ({ onPlay, playState, audioRef }) => {
     <MainComponent>
       <PlayWrapper onClick={handleClick}>
         {playState ? (
-          <PauseIcon className={clicked ? 'flip-horizontal-bottom' : ''} />
+          <PauseIcon className={clicked ? 'flip-scale-down-ver' : ''} />
         ) : (
           playState === false && (
-            <PlayIcon className={clicked ? '' : 'flip-horizontal-bottom'} />
+            <PlayIcon className={clicked ? '' : 'flip-scale-down-ver'} />
           )
         )}
         <audio

@@ -40,11 +40,9 @@ export const PlayIcon = styled(BsPlayCircleFill)`
     height: 370px;
   }
 
-  &.flip-horizontal-bottom {
-    -webkit-animation: flip-horizontal-bottom 0.4s
-      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-    animation: flip-horizontal-bottom 0.4s
-      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  &.flip-scale-down-ver {
+    -webkit-animation: flip-scale-down-ver 0.5s linear both;
+    animation: flip-scale-down-ver 0.5s linear both;
   }
 
   &:hover {
@@ -72,11 +70,9 @@ export const PauseIcon = styled(FaPauseCircle)`
     height: 380px;
   }
 
-  &.flip-horizontal-bottom {
-    -webkit-animation: flip-horizontal-bottom 0.4s
-      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-    animation: flip-horizontal-bottom 0.4s
-      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  &.flip-scale-down-ver {
+    -webkit-animation: flip-scale-down-ver 0.5s linear both;
+    animation: flip-scale-down-ver 0.5s linear both;
   }
 
   &:hover {
