@@ -41,9 +41,9 @@ export const PlayIcon = styled(BsPlayCircleFill)`
   }
 
   &.flip-horizontal-bottom {
-    -webkit-animation: flip-horizontal-bottom 0.5s
+    -webkit-animation: flip-horizontal-bottom 0.4s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-    animation: flip-horizontal-bottom 0.5s
+    animation: flip-horizontal-bottom 0.4s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
   }
 
@@ -73,9 +73,9 @@ export const PauseIcon = styled(FaPauseCircle)`
   }
 
   &.flip-horizontal-bottom {
-    -webkit-animation: flip-horizontal-bottom 0.5s
+    -webkit-animation: flip-horizontal-bottom 0.4s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-    animation: flip-horizontal-bottom 0.5s
+    animation: flip-horizontal-bottom 0.4s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
   }
 
