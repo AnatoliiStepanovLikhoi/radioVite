@@ -18,6 +18,12 @@ export const PlayWrapper = styled.div`
   @media ${device.desktop} {
     height: 400px;
   }
+
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+  }
 `;
 
 export const PlayPicture = styled.picture`
@@ -40,13 +46,15 @@ export const PlayIcon = styled(BsPlayCircleFill)`
     height: 370px;
   }
 
-  &.flip-scale-down-ver {
-    -webkit-animation: flip-scale-down-ver 0.5s linear both;
-    animation: flip-scale-down-ver 0.5s linear both;
+  &.rotate-tl {
+    -webkit-animation: rotate-tl 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
+    animation: rotate-tl 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 
   &:hover {
     fill: #d9d9d9;
+
     /* fill: tomato;
     border-radius: 50%;
     border: none;
@@ -70,9 +78,10 @@ export const PauseIcon = styled(FaPauseCircle)`
     height: 380px;
   }
 
-  &.flip-scale-down-ver {
-    -webkit-animation: flip-scale-down-ver 0.5s linear both;
-    animation: flip-scale-down-ver 0.5s linear both;
+  &.rotate-tl {
+    -webkit-animation: rotate-tl 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
+    animation: rotate-tl 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 
   &:hover {
