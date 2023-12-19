@@ -8,8 +8,8 @@ export const BackgroundImageRandom = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100vh;
-  width: 100%; */
+  height: 100dvh;
+  /* width: 100%; */
 
   /* min-height: 600px; */
 

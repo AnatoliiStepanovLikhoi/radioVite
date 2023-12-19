@@ -1,51 +1,59 @@
-import PropTypes from 'prop-types';
-import { useState } from 'react';
-import { VolumeSlider } from '../VolumeSlider/VolumeSlider';
-import { PlayWrapper, PlayIcon, PauseIcon } from './PlayWrapper.styled';
+// import PropTypes from 'prop-types';
+// import { useState } from 'react';
+// import { VolumeSlider } from '../VolumeSlider/VolumeSlider';
+import { PlayWrapper, PlayIcon } from './PlayWrapper.styled';
 import './animation.css';
 
 import { MainComponent } from './Main.styled';
 
-export const Main = ({ onPlay, playState, audioRef }) => {
-  const [clicked, setClicked] = useState(false);
+export const Main = () => {
+  // const [clicked, setClicked] = useState(false);
 
-  const isIOS = () => {
-    let platform = navigator?.userAgent || navigator?.platform || 'unknown';
+  // const isIOS = () => {
+  //   const userAgent = window.navigator.userAgent;
 
-    return /iPhone|iPod|iPad/.test(platform);
-  };
+  //   return /iPhone|iPod|iPad/.test(userAgent);
+  // };
 
-  const shouldRenderVolumeSlider = isIOS();
+  // const shouldRenderVolumeSlider = isIOS();
 
-  const handleClick = () => {
-    onPlay();
-    setClicked(!clicked);
-  };
+  // const handleClick = () => {
+  //   onPlay();
+  //   setClicked(!clicked);
+  // };
 
   return (
     <MainComponent>
-      <PlayWrapper onClick={handleClick}>
-        {playState ? (
+      <PlayWrapper
+        // onClick={handleClick}
+        href="http://p.onlineradiobox.com/ua/borispil/player/?cs=ua.borispil&played=1"
+        target="_blank"
+        rel="norefer"
+      >
+        <PlayIcon />
+        {/* {playState ? (
           <PauseIcon className={clicked ? 'rotate-tl' : ''} />
         ) : (
           playState === false && (
             <PlayIcon className={clicked ? '' : 'rotate-tl'} />
           )
-        )}
-        <audio
+        )} */}
+
+        {/* <audio
           ref={audioRef}
           src="https://borispilfm.zorgvpn.top/borispilfm"
-        ></audio>
+        ></audio> */}
+        {/* <a src="http://p.onlineradiobox.com/ua/borispil/player/?cs=ua.borispil&played=1"></a> */}
       </PlayWrapper>
-      {!shouldRenderVolumeSlider && (
+      {/* {!shouldRenderVolumeSlider && (
         <VolumeSlider defaultValue={[50]} audioRef={audioRef} />
-      )}
+      )} */}
     </MainComponent>
   );
 };
 
-Main.propTypes = {
-  onPlay: PropTypes.func.isRequired,
-  playState: PropTypes.bool.isRequired,
-  audioRef: PropTypes.object.isRequired,
-};
+// Main.propTypes = {
+//   onPlay: PropTypes.func.isRequired,
+//   playState: PropTypes.bool.isRequired,
+//   audioRef: PropTypes.object.isRequired,
+// };

@@ -4,7 +4,7 @@ import { FaPauseCircle } from 'react-icons/fa';
 
 import { device } from '../constants/deviceType';
 
-export const PlayWrapper = styled.div`
+export const PlayWrapper = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;

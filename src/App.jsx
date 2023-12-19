@@ -1,4 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import {
+  useState,
+  useEffect,
+  // useRef
+} from 'react';
 import Container from './components/constants/container';
 
 import {
@@ -12,19 +16,19 @@ import { Helmet } from 'react-helmet-async';
 
 function App() {
   const [count, setCount] = useState(1);
-  const [play, setPlay] = useState(false);
+  // const [play, setPlay] = useState(false);
 
-  const audioRef = useRef(null);
+  // const audioRef = useRef(null);
 
-  function onPlay() {
-    if (play === false) {
-      setPlay(true);
-      audioRef.current.play();
-    } else {
-      setPlay(false);
-      audioRef.current.pause();
-    }
-  }
+  // function onPlay() {
+  //   if (play === false) {
+  //     setPlay(true);
+  //     audioRef.current.play();
+  //   } else {
+  //     setPlay(false);
+  //     audioRef.current.pause();
+  //   }
+  // }
 
   useEffect(() => {
     const random = Math.floor(Math.random() * 2) + 1;
@@ -46,7 +50,9 @@ function App() {
         <BlurBackground>
           <Container>
             <Navbar />
-            <Main onPlay={onPlay} playState={play} audioRef={audioRef} />
+            <Main
+            // onPlay={onPlay} playState={play} audioRef={audioRef}
+            />
             <Footer />
           </Container>
         </BlurBackground>
